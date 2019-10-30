@@ -29,19 +29,28 @@ public class Deck {
      * @param values is an array containing all of the card point values.
      */
     public Deck(String[] ranks, String[] suits, int[] values) {
+        //instantiate our cards instance variable
         cards = new ArrayList<Card>();
+        // loop through the ranks
         for (int j = 0; j < ranks.length; j++) {
+            // loop through the suits
             for (String suitString : suits) {
+                // add each card to the ArrayList
                 cards.add(new Card(ranks[j], suitString, values[j]));
             }
         }
-        /**
-         * Determines if this deck is empty (no undealt cards).
-         *
-         * @return true if this deck is empty, false otherwise.
-         */
+        // initialize the size variable
+        this.size = cards.size();
+        this.shuffle();
+    } // closes constructor
+
+    /**
+     * Determines if this deck is empty (no undealt cards).
+     *
+     * @return true if this deck is empty, false otherwise.
+     */
     public boolean isEmpty() {
-        /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        return size == 0;
     }
 
     /**
@@ -50,7 +59,7 @@ public class Deck {
      * @return the number of undealt cards in this deck.
      */
     public int size() {
-        /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        return size;
     }
 
     /**
@@ -59,6 +68,16 @@ public class Deck {
      */
     public void shuffle() {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+        for (int k = cards.size() - 1; k > 0; k--) {
+            int pos = (int) (Math.random() * (k + 1));
+
+            Card temp = cards.get(k);
+
+            cards.set(k, cards.get(pos));
+
+            cards.set(pos, temp);
+
+        } // closes for loop
     }
 
     /**
@@ -68,8 +87,12 @@ public class Deck {
      * previously dealt.
      */
     public Card deal() {
-        /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
         // IS EMPTY if so return null
+        if (size == 0) {
+            return null;
+        }
+
+        // If it is not empty
         size--;
         Card c = cards.get(size);
         return c;
