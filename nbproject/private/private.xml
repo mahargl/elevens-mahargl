@@ -5,8 +5,12 @@
         <group>
             <file>file:/C:/Users/mahargl/Documents/NetBeansProjects/elevens-mahargl/src/CardTester.java</file>
             <file>file:/C:/Users/mahargl/Documents/NetBeansProjects/elevens-mahargl/src/Shuffler.java</file>
-            <file>file:/C:/Users/mahargl/Documents/NetBeansProjects/elevens-mahargl/src/Card.java</file>
+            <file>file:/C:/Users/mahargl/Documents/NetBeansProjects/elevens-mahargl/src/ElevensBoard.java</file>
+            <file>file:/C:/Users/mahargl/Documents/NetBeansProjects/elevens-mahargl/src/Board.java</file>
             <file>file:/C:/Users/mahargl/Documents/NetBeansProjects/elevens-mahargl/src/Deck.java</file>
+            <file>file:/C:/Users/mahargl/Documents/NetBeansProjects/elevens-mahargl/src/Card.java</file>
+            <file>file:/C:/Users/mahargl/Documents/NetBeansProjects/elevens-mahargl/src/CardGameGUI.java</file>
+            <file>file:/C:/Users/mahargl/Documents/NetBeansProjects/elevens-mahargl/src/ElevensGUIRunner.java</file>
             <file>file:/C:/Users/mahargl/Documents/NetBeansProjects/elevens-mahargl/src/DeckTester.java</file>
         </group>
     </open-files>

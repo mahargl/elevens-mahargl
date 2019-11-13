@@ -40,7 +40,7 @@ public class Deck {
             }
         }
         // initialize the size variable
-        this.size = cards.size();
+   
         this.shuffle();
     } // closes constructor
 
@@ -68,6 +68,7 @@ public class Deck {
      */
     public void shuffle() {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+        this.size = cards.size();
         for (int k = cards.size() - 1; k > 0; k--) {
             int pos = (int) (Math.random() * (k + 1));
 
